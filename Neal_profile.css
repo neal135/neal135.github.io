@@ -1,0 +1,238 @@
+
+/*overflow:hidden 會使得網頁scroll消失*/
+body {
+    margin: 0;
+    /*overflow: hidden;*/
+    font-family: "標楷體",arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+html, body {
+    height: 500px;
+}
+
+canvas {
+    display: block;
+}
+
+.initial_headline{
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Baloo Da 2", serif, arial;
+}
+
+.desktop_menu{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.mobile_menu{
+    display: none;
+    text-align: center;
+}
+
+/*
+.menu_item{
+    flex: none;
+    width: 300px;
+    margin: 15px;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+*/
+
+
+/*開頭選單的變色框*/
+.menu_item{
+    color: white;
+    flex: none;
+    width: 300px;
+    margin: 15px;
+    font-size: 25px;
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+/*開頭選單變色框特效*/
+.menu_item:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
+/*開頭選單變色框特效*/  
+@keyframes animatedgradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+
+/*make RWD when pixel is lower than 1250px*/
+@media(max-width: 1250px){
+    .desktop_menu{
+        flex-wrap: wrap;
+    }
+    .menu_item{
+        width: 40%;
+    }
+}
+
+/*make RWD when in mobile browsing mode, lower than 500px*/
+@media(max-width:500px){
+    .desktop_menu{
+        display: none;
+        text-align: center;
+    }
+    .initial_headline{
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+    }
+    .mobile_menu{
+        display: block;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .menu_item{
+        width: 80%;
+    }
+}
+
+/*接下來定義每個section的內容*/
+
+.introduction_sec{ 
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.section_head{
+    color: white;
+    width: 600px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.question{
+    color: white;
+    width: 600px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.insert_blank{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.intro_text{
+    color: white;
+    width: 600px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.intro_quote{
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-weight: 700;
+    /*background-color: #301934;*/
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 
+                0px 0px 10px #b393d3, 
+                0px 0px 10px #b393d3,
+                0px 0px 20px #b393d3,
+                0px 0px 25px #b393d3;
+}
+
+.career_sec{
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.career_text{
+    color: white;
+    width: 600px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.tech_sec{
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.tech_text{
+    color: white;
+    width: 600px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.goal_sec{
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.goal_text{
+    color: white;
+    /*width: 800px;*/
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.list_class{
+    font-size: 26px;
+    color: white;
+    margin-left: 120px;
+}
