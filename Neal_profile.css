@@ -89,6 +89,138 @@ canvas {
 }
 
 
+
+/*接下來定義每個section的內容*/
+
+.introduction_sec{ 
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.section_head{
+    display: flex;
+    color: white;
+    width: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.question{
+    flex: auto;
+    color: white;
+    width: 600px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.insert_blank{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.intro_text{
+    flex: auto;
+    color: white;
+    width: 50%;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.intro_quote{
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-weight: 700;
+    /*background-color: #301934;*/
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 
+                0px 0px 10px #b393d3, 
+                0px 0px 10px #b393d3,
+                0px 0px 20px #b393d3,
+                0px 0px 25px #b393d3;
+}
+
+.response_photo{
+    width: auto;
+    max-width: 400px;
+    height: 40%;
+    text-align:center;
+}
+
+
+.career_sec{
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.career_text{
+    flex: auto;
+    color: white;
+    width: 600px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.tech_sec{
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.tech_text{
+    flex: auto;
+    color: white;
+    width: 600px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.goal_sec{
+    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
+    width: 100%;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.goal_text{
+    flex: auto;
+    color: white;
+    /*width: 800px;*/
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.list_class{
+    font-size: 26px;
+    color: white;
+    margin-left: 120px;
+}
+
+
 /*make RWD when pixel is lower than 1250px*/
 @media(max-width: 1250px){
     .desktop_menu{
@@ -119,120 +251,4 @@ canvas {
     .menu_item{
         width: 80%;
     }
-}
-
-/*接下來定義每個section的內容*/
-
-.introduction_sec{ 
-    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    width: 100%;
-    background-color: white;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.section_head{
-    color: white;
-    width: 600px;
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 100px;
-    margin-bottom: 10px;
-}
-
-.question{
-    color: white;
-    width: 600px;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    margin-bottom: 10px;
-}
-
-.insert_blank{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.intro_text{
-    color: white;
-    width: 600px;
-    font-size: 26px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-}
-
-.intro_quote{
-    font-size: 26px;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5em;
-    margin-left: 100px;
-    margin-top: 40px;
-    font-weight: 700;
-    /*background-color: #301934;*/
-    color: #fdfdfe;
-    text-shadow: 0px 0px 5px #b393d3, 
-                0px 0px 10px #b393d3, 
-                0px 0px 10px #b393d3,
-                0px 0px 20px #b393d3,
-                0px 0px 25px #b393d3;
-}
-
-.career_sec{
-    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
-    width: 100%;
-    background-color: white;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.career_text{
-    color: white;
-    width: 600px;
-    font-size: 26px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-}
-
-.tech_sec{
-    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
-    width: 100%;
-    background-color: white;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.tech_text{
-    color: white;
-    width: 600px;
-    font-size: 26px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-}
-
-.goal_sec{
-    background: linear-gradient(135deg,  #4c4c4c 0%,#595959 8%,#666666 13%,#474747 18%,#474747 18%,#2c2c2c 26%,#000000 51%,#111111 60%,#2b2b2b 90%,#1c1c1c 99%,#1c1c1c 99%,#131313 100%);
-    width: 100%;
-    background-color: white;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.goal_text{
-    color: white;
-    /*width: 800px;*/
-    font-size: 26px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-}
-
-.list_class{
-    font-size: 26px;
-    color: white;
-    margin-left: 120px;
 }
